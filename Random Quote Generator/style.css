@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* 
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #C24914;;
+  } */
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    max-width: 100%;
+   
+  }
+  
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(129, 102, 120, 0.8),
+        rgba(107, 107, 114, 0.7)
+      ),
+      url(pic10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+  }
+ .container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 100vw;
+    height: 100vh; */
+    padding: 10%;
+ }
+ .content-div {
+      
+     /* position:absolute; */
+     width: 70%;
+     margin-top:0px;
+     text-align: center;
+ }
+
+  .quote-div {
+    /* position:absolute; */
+
+      background-color:bisque;
+      color: black;
+      padding:80px 80px 40px;
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 20px 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+      border-radius: 10px;
+
+      /* margin:auto; */
+  }
+  .quote-div:before{
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  .quote-div:p {
+      display: inline;
+  }
+
+
+  .author {
+      text-align: right;
+      /* display: block; */
+      margin-right: 20px;
+      /* position:relative; */
+      /* float:right; */
+  }
+
+
+
+  p.quote {
+      font-size: 2vw !important;
+      color:#8b4b4b;
+      font-weight: 900;
+      font-family: 'Poppins', sans-serif;
+      margin: 5px 20px;
+     
+  }
+
+  button {
+      font-size: 1.2vw;
+      text-shadow: 20px;
+      color:#7e316d;
+      font-weight: bold;
+      padding: 10px 30px;
+      display:block;
+      margin: 20px auto;
+  }
+
+  h1 {
+      color: white;
+  }
+
+  input{
+      height: 2vw;
+      width: 50px;
+  }
